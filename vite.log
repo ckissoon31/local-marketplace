@@ -1,0 +1,5 @@
+nohup: ignoring input
+no configuration file provided: not found
+Sail is not running.
+
+You may Sail using the following commands: './vendor/bin/sail up' or './vendor/bin/sail up -d'
