@@ -1,5 +1,16 @@
 nohup: ignoring input
-no configuration file provided: not found
-Sail is not running.
 
-You may Sail using the following commands: './vendor/bin/sail up' or './vendor/bin/sail up -d'
+> dev
+> vite
+
+12:15:44 PM [vite] (client) info: Types generated for actions, routes, form variants
+  Plugin: @laravel/vite-plugin-wayfinder
+
+  VITE v7.2.7  ready in 30267 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://172.18.0.3:5173/
+
+  LARAVEL v12.42.0  plugin v2.0.1
+
+  ➜  APP_URL: http://localhost:8000
