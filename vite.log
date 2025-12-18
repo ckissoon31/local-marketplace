@@ -3,10 +3,10 @@ nohup: ignoring input
 > dev
 > vite
 
-12:15:44 PM [vite] (client) info: Types generated for actions, routes, form variants
+4:34:41 PM [vite] (client) info: Types generated for actions, routes, form variants
   Plugin: @laravel/vite-plugin-wayfinder
 
-  VITE v7.2.7  ready in 30267 ms
+  VITE v7.2.7  ready in 30915 ms
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://172.18.0.3:5173/
