@@ -21,6 +21,10 @@ return Application::configure(basePath: dirname(__DIR__))
             HandleInertiaRequests::class,
             AddLinkHeadersForPreloadedAssets::class,
         ]);
+
+        $middleware->alias([
+            'seller' => App\Domains\User\Middleware\EnsureUserIsSeller::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
