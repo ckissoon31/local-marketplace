@@ -16,7 +16,7 @@ class EnsureUserRole
     public function handle(Request $request, Closure $next, string $role): Response
     {
 
-        if (! $request->user()->hasRole($role)) {
+        if (!$request->user()->hasRole($role)) {
             abort(403, "Access denied. $role account required.");
         }
         return $next($request);
