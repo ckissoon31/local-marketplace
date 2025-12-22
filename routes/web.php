@@ -18,30 +18,21 @@ Route::middleware(['auth'])->group(function(){
 
 Route::middleware(['role:buyer'])->get('/buyer/dashboard', function () {
     $user = request()->user(); // current authenticated user
-    return [
-        'id' => $user->id,
-        'name' => $user->name,
-        'email' => $user->email,
-        'roles' => $user->roles->pluck('name'), // list of role names
-    ];
+    return Inertia::render('Buyer/Dashboard', [
+
+            'user' => auth()->user()->only(['id', 'name', 'email']),
+
+
+
+    ]);
 });
 Route::middleware(['role:seller'])->get('/seller/dashboard', function () {
     $user = request()->user(); // current authenticated user
-    return [
-        'id' => $user->id,
-        'name' => $user->name,
-        'email' => $user->email,
-        'roles' => $user->roles->pluck('name'), // list of role names
-    ];
+    return Inertia::render('Seller/Dashboard');
 });
 Route::middleware(['role:administrator'])->get('/admin/dashboard', function () {
     $user = request()->user(); // current authenticated user
-    return [
-        'id' => $user->id,
-        'name' => $user->name,
-        'email' => $user->email,
-        'roles' => $user->roles->pluck('name'), // list of role names
-    ];
+     return Inertia::render('Admin/Dashboard');
 });
    
 });

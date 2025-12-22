@@ -3,18 +3,18 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import { dashboard } from '@/routes';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/vue3';
-import PlaceholderPattern from '../components/PlaceholderPattern.vue';
+import PlaceholderPattern from '@/components/PlaceholderPattern.vue';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Dashboard',
+        title: 'Admin Dashboard',
         href: dashboard().url,
     },
 ];
 </script>
 
 <template>
-    <Head title="Dashboad"/>
+       <Head title="Admin Dashboad"/>
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <div

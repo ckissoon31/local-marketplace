@@ -31,7 +31,9 @@ const page = usePage();
                         <component :is="item.icon" />
                         <span>{{ item.title }}</span>
                     </Link>
+                    
                 </SidebarMenuButton>
+                
             </SidebarMenuItem>
         </SidebarMenu>
     </SidebarGroup>
