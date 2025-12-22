@@ -5,13 +5,7 @@ import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/vue3';
 import PlaceholderPattern from '@/components/PlaceholderPattern.vue';
 
-defineProps<{
-    user: {
-        id: number;
-        name: string;
-        email: string;
-    };
-}>();
+
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -22,7 +16,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 </script>
 
 <template>
-       <Head title="Buyer Dashboad"/>
+       <Head title="Buyer Dashboard"/>
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <div
@@ -33,10 +27,6 @@ const breadcrumbs: BreadcrumbItem[] = [
                     class="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border"
                 >
                     <PlaceholderPattern />
-                    <h2 class="text-xl font-semibold mb-4">Your Account Info</h2>
-                <p><strong>ID:</strong> {{ user.id }}</p>
-                <p><strong>Name:</strong> {{ user.name }}</p>
-                <p><strong>Email:</strong> {{ user.email }}</p>
                 </div>
                 <div
                     class="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border"
